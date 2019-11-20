@@ -177,7 +177,7 @@ public class PCollectionTests {
   }
 
   @Test
-  public void should_create_pcollection_tuple(){
+  public void should_create_pcollection_tuple() {
     Pipeline pipeline = BeamFunctions.createPipeline("Pcollection tuple");
     PCollection<String> letters = pipeline.apply(Create.of(Arrays.asList("a", "b", "c")));
     PCollection<Integer> numbers = pipeline.apply(Create.of(Arrays.asList(1, 2, 3)));
@@ -187,14 +187,14 @@ public class PCollectionTests {
     TupleTag<Integer> numbersTag = new TupleTag<>();
     TupleTag<Boolean> flagsTag = new TupleTag<>();
 
-    PCollectionTuple mixedDataTuple = PCollectionTuple.of(lettersTag, letters).and(numbersTag, numbers)
-        .and(flagsTag, flags);
+    PCollectionTuple mixedDataTuple =
+        PCollectionTuple.of(lettersTag, letters).and(numbersTag, numbers).and(flagsTag, flags);
     Map<TupleTag<?>, PCollection<?>> allData = mixedDataTuple.getAll();
 
-    PAssert.that((PCollection<String>)allData.get(lettersTag)).containsInAnyOrder("a", "b", "c");
-    PAssert.that((PCollection<Integer>)allData.get(numbersTag)).containsInAnyOrder(1, 2, 3);
-    PAssert.that((PCollection<Boolean>)allData.get(flagsTag)).containsInAnyOrder(true, false, true);
+    PAssert.that((PCollection<String>) allData.get(lettersTag)).containsInAnyOrder("a", "b", "c");
+    PAssert.that((PCollection<Integer>) allData.get(numbersTag)).containsInAnyOrder(1, 2, 3);
+    PAssert.that((PCollection<Boolean>) allData.get(flagsTag))
+        .containsInAnyOrder(true, false, true);
     pipeline.run().waitUntilFinish();
-
   }
 }

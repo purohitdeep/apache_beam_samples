@@ -1,7 +1,7 @@
 # apache_beam_samples
 Code demonstrating various features of apache beam
 
-PCollection
+**PCollection**
 1. Create From Memory
 2. Create Pcollection from text file
 3. Pcollection should be immutable
