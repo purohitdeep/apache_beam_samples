@@ -1,0 +1,19 @@
+
+K
+.github/workflows/maven.yml,c\7\c709f6995f23dae0da365bff70068f8288fa89e0
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+`
+0src/test/java/com/deep/sample/BeamFunctions.java,a\2\a2595cfa3077c933e69156a02ff062759eb21e13
+n
+>src/test/java/com/deep/sample/transformations/Comparators.java,0\8\088005ae3936b5cd0be241699568e67b816a687c
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+o
+?src/test/java/com/deep/sample/pcollection/PCollectionTests.java,a\0\a07985139604556bf5188ce43a670c564b919453
+p
+@src/test/java/com/deep/sample/transformations/Multiplicator.java,d\a\da8d3cb01399d0f6632ad2878fab6b7d742b669a
+j
+:src/test/java/com/deep/sample/transformations/Filters.java,3\8\38896ea39f6f0ce22f2aabd0b250e3aa82992c14
+p
+@src/test/java/com/deep/sample/transformations/TransformTest.java,d\0\d055df88b2a37f210a643ec437aca7fab3650194
